@@ -39,6 +39,7 @@ h2 {
 
 button {
   font-family: "Orbitron", sans-serif;
+  width: 75%;
   padding: 8px 25px;
   font-size: 20px;
   border-radius: 20px;
