@@ -7,12 +7,6 @@ const reset = document.getElementById("reset");
 
 let counter = document.getElementById("counter");
 
-const mainHeader = document.getElementById("uppercase");
-
-const header = "Neon Counter";
-
-mainHeader.textContent = header.toUpperCase();
-
 const addOne = () => {
   count += 1;
   counter.textContent = count;
