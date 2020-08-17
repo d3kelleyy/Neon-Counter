@@ -3,6 +3,8 @@ const add = document.getElementById("increment");
 
 const minus = document.getElementById("decrement");
 
+const reset = document.getElementById("reset");
+
 let counter = document.getElementById("counter");
 
 const addOne = () => {
@@ -11,14 +13,17 @@ const addOne = () => {
 };
 
 const minusOne = () => {
-  if (count > 0) {
-    count -= 1;
-    counter.textContent = count;
-  } else {
-    count = 0;
-  }
+  count -= 1;
+  counter.textContent = count;
+};
+
+const setToZero = () => {
+  count = 0;
+  counter.textContent = count;
 };
 
 add.addEventListener("click", addOne);
 
 minus.addEventListener("click", minusOne);
+
+reset.addEventListener("click", setToZero);
